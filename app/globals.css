@@ -105,3 +105,19 @@ a {
     color-scheme: dark;
   }
 }
+
+.greater-than-seven {
+  font-size: 48px;
+}
+
+.greater-than-ten {
+  color: green;
+}
+
+.less-than-zero {
+  transform: rotate(270deg);
+}
+
+h1:hover {
+  transform: rotateY(180deg)
+}
