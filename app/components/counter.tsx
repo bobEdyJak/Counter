@@ -18,7 +18,7 @@ const Counter = () => {
     return (
         <div>
             <h1 className="componentHeading">Counter</h1>
-            <p className="countLabel">Count: {count}</p>
+            <p className={`${count >= 7 && "greater-than-seven"} ${count >= 10 && "greater-than-ten"} ${count < 0 && "less-than-zero"}`}>Count: {count}</p>
             <button className="fancyButton" onClick={() => incrementCounter()}>Increment</button>
             <button className="fancyButton" onClick={() => decrementCounter()}>Decrement</button>
             <button className="fancyButton" onClick={() => reset()}>Reset</button>
